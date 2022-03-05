@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ebjj">
+    <meta name="description" content="portfolio page">
+    <title>이벤트웹 : HYUNDAI CASPER</title>
+    <!-- Meta Data : FaceBook-->
+    <meta property="og:image" content="./images/favicon/fav180.png">
+    <meta property="og:title" content="이벤트웹, 포트폴리오">
+    <meta property="og:description" content="포트폴리오 페이지">
+    <meta property="og:url" content="http://eunbij.dothome.co.kr/casper">
+    <meta property="og:locale" content="ko-KR">
+    <meta property="og:site_name" content="이벤트웹, 포트폴리오">
+    <meta property="og:type" content="포트폴리오">
+    <!-- BootStrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <!-- Favicon PC / Mobile -->
+    <link rel="shortcut icon" href="./images/favicon/fav180.png">
+    <link rel="apple-touch-icon-precomposed" href="./images/favicon/fav32.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- System Font CSS(optional) -->
+    <!-- <link rel="stylesheet" href="./css/system_font.css"> -->
+    <!-- No Scrollbar CSS -->
+    <!-- <link rel="stylesheet" href="./css/no_scrollbar.css"> -->
+    <!-- 프로젝트 페이지 CSS -->
+    <link rel="stylesheet" href="./css/casper.css">
+    <!-- HTML5 JS File -->
+    <script src="./js/html5shiv.js"></script>
+    <script src="./js/respond.src.js"></script>
+    <!-- JQ PlugIn -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- PreFix Free -->
+    <script src="./js/prefixfree.min.js"></script>
+
+</head>
+<body>
+    <!-- Background Video -->
+    <figure>
+        <video muted class="video">
+            <source src="./media/casper.mp4" type="video/mp4">
+        </video>
+    </figure>
+    <!-- /Background Video -->
+    <!-- Video Control Button -->
+    <div class="video_btn">
+        <button>
+            <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+        </button>
+        <button>
+            <i class="fa fa-pause-circle-o" aria-hidden="true"></i>
+        </button>
+        <button>
+            <i class="fa fa-stop-circle-o" aria-hidden="true"></i>
+        </button>
+        <button id="sound_btn">
+            <i class="fa fa-volume-off" aria-hidden="true"></i>
+            <!-- <i class="fa fa-volume-up" aria-hidden="true"></i> -->
+        </button>
+    </div>
+    <!-- /Video Control Button -->
+    <!-- Header -->
+    <header>
+        <h1>
+            <a href="#"><img src="./images/logo.png" alt="로고"></a>
+        </h1>
+        <nav>
+            <ul id="gnb">
+                <!-- GNB 1depth -->
+                <li>
+                    <a href="#"><em>CASPER</em></a>
+                    <!-- GNB 2depth -->
+                    <ul class="snb">
+                        <li><a href="#"><em>HIGHLIGHT</em></a></li>
+                        <li><a href="#"><em>DIGITAL&nbsp;SHOWROOM</em></a></li>
+                        <li><a href="#"><em>CONNECTED&nbsp;SERVICE</em></a></li>
+                    </ul>
+                    <!-- /GNB 2depth -->
+                </li>
+                <!-- /GNB 1depth -->
+                <!-- GNB 1depth -->
+                <li>
+                    <a href="#"><em>EXPERIENCE</em></a>
+                    <!-- GNB 2depth -->
+                    <ul class="snb">
+                        <li><a href="#"><em>SPACE</em></a></li>
+                    </ul>
+                    <!-- /GNB 2depth -->
+                </li>
+                <!-- /GNB 1depth -->
+                <!-- GNB 1depth -->
+                <li>
+                    <a href="#"><em>SHOPPING</em></a>
+                    <!-- GNB 2depth -->
+                    <ul class="snb">
+                        <li><a href="#"><em>BUILD&amp;PRICE</em></a></li>
+                    </ul>
+                    <!-- /GNB 2depth -->
+                </li>
+                <!-- /GNB 1depth -->
+                <!-- GNB 1depth -->
+                <li>
+                    <a href="#"><em>SUPPORT</em></a>
+                    <!-- GNB 2depth -->
+                    <ul class="snb">
+                        <li><a href="#"><em>DIGITAL&nbsp;SERVICE</em></a></li>
+                        <li><a href="#"><em>CUSTOMER&nbsp;CENTER</em></a></li>
+                        <li><a href="#"><em>NOTICE</em></a></li>
+                    </ul>
+                    <!-- /GNB 2depth -->
+                </li>
+                <!-- /GNB 1depth -->
+
+                <!-- Hover 이슈 해결 -->
+                <li>
+                    <a href="#"></a>
+                    <ul class="snb">
+                        <li></li>
+                    </ul>
+                </li>
+                <!-- /Hover 이슈 해결 -->
+            </ul>
+        </nav>
+    </header>
+    <!-- /Header -->
+    <!-- RightTop SNS  -->
+    <nav>
+        <ul id="sns">
+            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-android" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+    <!-- /RightTop SNS -->
+    <!-- Text Image -->
+    <section class="txt">
+        <p class="p1">
+            CASPER
+        </p>
+        <p class="p2">
+            강하고 아이코닉한 <em>SUV</em>
+        </p>
+    </section>
+    <!-- /Text Image -->
+
+    <!-- Right Bottom Button -->
+    <section id="side">
+        <!-- Image Button -->
+        <h3 class="inner">
+            <p>
+                <em>Exterior</em>
+                <a href="#"><img src="./images/pic1.png" alt="버튼1"></a>
+            </p>
+            <p>
+                <em>Interior &amp; Space</em>
+                <a href="#"><img src="./images/pic2.png" alt="버튼2"></a>
+            </p>
+            <p>
+                <em>Convenience</em>
+                <a href="#"><img src="./images/pic3.png" alt="버튼3"></a>
+            </p>
+        </h3>
+        <!-- /Image Button -->
+        <!-- Animation Arrow -->
+        <h3 class="arrBtn">
+            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+        </h3>
+        <!-- /Animation Arrow -->
+    </section>
+    <!-- /Right Bottom Button -->
+    
+<!-- 프로젝트 페이지 SCRIPT -->
+<script src="./js/casper.js"></script>
+</body>
+</html>

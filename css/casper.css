@@ -1,0 +1,316 @@
+@charset "utf-8";
+body,html{
+    min-width: 100vw;
+    min-height: 100vh;
+    /* 포지션 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* BackGround Video */
+.video {
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    object-fit: fill;
+    /* 포지션 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -99;
+}
+
+/* Video Control Button */
+.video_btn button {
+    /* 포지션 */
+    position: fixed;
+    top: 50px;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.video_btn button i {
+    font-size: 30px;
+    color: #fff;
+}
+.video_btn button:first-child {
+    right: 540px;
+}
+.video_btn button:nth-child(2) {
+    right: 480px;
+}
+.video_btn button:nth-child(3) {
+    right: 420px;
+}
+.video_btn button:last-child {
+    right: 364px;
+}
+
+/* RightTop SNS */
+#sns {
+    /* 포지션 */
+    position: fixed;
+    right: 40px;
+    top: 50px;
+    z-index: 100;
+}
+#sns li {
+    display: inline-block;
+}
+#sns li i {
+    font-size: 30px;
+    color: #030BA6;
+    color: #D9B855;
+    padding-left: 20px;
+    opacity: 0.8;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+#sns li:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Header */
+header {
+    width: 700px;
+    height: 100vh;
+    /* 포지션 */
+    position: fixed;
+    left: -420px;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(45deg,#030BA6,#030A8C,#3F4EA6);
+    /* background: linear-gradient(45deg,#F26B6B, #F22E3E,#BF1304); */
+    /* 박스 기울이기 */
+    transform: skewX(-40deg);
+    /* 포지션 위치기준값 */
+    /* position: relative; */
+}
+header h1 {
+    /* 포지션 */
+    position: fixed;
+    left: 200px;
+    top: 40px;
+    z-index: 20;
+    /* 로고 바로 세우기 */
+    transform: skewX(40deg);
+}
+header h1 img {
+    width: 100%;
+}
+header #gnb {
+    /* 포지션 absolute */
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    z-index: 30;
+}
+/* GNB 1depth */
+header #gnb li a {
+    display: block;
+    width: 200px;
+    color: #D9C5C1;
+    font: bold 18px/3 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
+    padding-right: 40px;
+}
+header #gnb li:hover a {
+    background: #222;
+    background: #F2C029;
+    color: #fff;
+}
+header #gnb em {
+    display: inline-block;
+    /* 인라인 요소이므로 인라인블록으로 바꿔줌 */
+    transform: skewX(40deg);
+}
+
+/* GNB 2depth */
+header #gnb li {
+    /* 2depth 포지션 위치기준값 */
+    position: relative;
+}
+header #gnb .snb {
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* z-index: 40; */
+    /* GNB 2depth 안 보이다가 보이도록 */
+    opacity: 0;
+    transition: all 0.5s;
+}
+header #gnb .snb a {
+    display: block;
+    width: 240px;
+    height: 40px;
+    color: #fff;
+    font: bold 16px/2.5 'IBM Plex Sans KR', sans-serif;
+    border-bottom: 1px solid #030BA6;
+    text-indent: 2em;
+    margin-bottom: 3px;
+}
+/* GNB 2depth 배경색 효과 */
+header #gnb .snb li:hover>a {
+    background: #8C6C0D;
+    color: #fff;
+}
+
+/* GNB 1depth hover하면 GNB 2depth 나오는 효과 */
+header #gnb li:hover .snb {
+    opacity: 0.8;
+    left: 180px;
+}
+
+
+
+/* Text Image */
+.txt {
+    /* 포지션 */
+    position: fixed;
+    right: 120px;
+    top: 180px;
+    z-index: 1;
+}
+.txt .p1 {
+    font-size: 8rem;
+    color: #8C3027;
+    color: #F2BF27;
+    text-shadow: 1px 1px 1px #000;
+    font-family: Kaushan, cursive;
+    letter-spacing: -1px;
+}
+/* .txt .p1>em {
+    font-size: 50px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: #fff;
+    font-style: italic;
+} */
+.txt .p2 {
+    font-size: 36px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: #000;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    letter-spacing: -1px;
+    margin-left: 48px;
+}
+.txt .p2>em {
+    font: bold 46px 'IBM Plex Sans KR', sans-serif;
+    color: #D9C5C1;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* Right Bottom Button */
+#side {
+    width: 800px;
+    height: 100%;
+    background: #111;
+    /* 포지션 */
+    position: fixed;
+    right: -800px;
+    top: 0;
+    transform: skewX(-40deg);
+    opacity: 0.5;
+    cursor: pointer;
+}
+/* 우측 하단 전체 호버 시 */
+#side:hover {
+    right: -500px;
+    opacity: 0.8;
+}
+#side .inner {
+    width: 400px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    transition: all 1s;
+}
+#side:hover .inner {
+    left: 50px;
+}
+/* Image Button */
+#side .inner p {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    transform: translateX(200px);
+}
+#side .inner p img {
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+#side .inner p img:hover {
+    opacity: 1;
+}
+/* Image Button 3개의 위치 설정 */
+#side .inner p:nth-child(1){
+    bottom: 270px;
+    transition: all 0.4s;
+}
+#side .inner p:nth-child(2){
+    bottom: 160px;
+    transition: all 0.8s;
+}
+#side .inner p:nth-child(3){
+    bottom: 50px;
+    transition: all 1.2s;
+}
+#side .inner p>em {
+    display: inline-block;
+    font: bold 16px/1.6 'IBM Plex Sans KR', sans-serif;
+    color: #F2C029;
+    transform: skewX(40deg);
+}
+/* 우측 하단 전체 호버 시 Image Button  각각 시간차 이동 효과 */
+#side:hover .inner p {
+    transform: translateX(0);
+}
+
+/* 애니메이션 화살표 */
+#side .arrBtn {
+    position: absolute;
+    left: 200px;
+    bottom: 40px;
+    z-index: 300;
+    transform: skewX(40deg);
+}
+#side .arrBtn i {
+    font-size: 60px;
+    color: #F2C029;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 300;
+}
+/* time 2개일 때 2번째 오는 시간이 딜레이 */
+#side .arrBtn i:nth-child(1){
+    animation: arrowAni linear 1.5s 0s infinite;
+}
+#side .arrBtn i:nth-child(2){
+    animation: arrowAni linear 1.5s 0.5s infinite;
+}
+#side .arrBtn i:nth-child(3){
+    animation: arrowAni linear 1.5s 1s infinite;
+
+}
+
+/* Animation Keyframes */
+@keyframes arrowAni {
+    from {
+        opacity: 1;
+        transform: scale(1);
+        right: 0;
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.2);
+        right: 90px;
+    }
+}
